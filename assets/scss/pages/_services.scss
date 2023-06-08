@@ -1,0 +1,42 @@
+#services {
+  .container {
+    .services {
+      .g-0 {
+        .col-md-12 {
+          .g-3 {
+            .col-md-8 {
+              .service-left {
+                padding-right: 3rem !important;
+                .our-services {
+                  font-size: 12px;
+                  margin-bottom: 5px;
+                  color: #1fb6fc;
+                  font-weight: 500;
+                  letter-spacing: 2px;
+                }
+                h2 {
+                  font-size: 40px;
+                  font-weight: 400;
+                  line-height: 1.4;
+                }
+                a {
+                  background: #bc6ff1 !important;
+                  border: 1px solid #bc6ff1 !important;
+                  color: #fff !important;
+                }
+                .btn{
+                    padding: 15 20px;
+                    cursor: pointer;
+                    border-radius: 40px 40px 40px 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    transition: all 0.3s ease;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

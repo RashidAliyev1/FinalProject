@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 0;
+  z-index: 3;
+}
+header .container .header .header-logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+header .container .header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header .container .header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+header .container .header nav ul li {
+  position: relative;
+}
+header .container .header nav ul li a {
+  font-size: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+header .container .header nav ul li a::after {
+  display: block;
+  content: "";
+  color: white;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+#home {
+  background-color: #6610f2;
+  padding: 200px;
+}
+#home .container .home {
+  margin: 10px;
+}
+#home .container .home .col-md-6 h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.2;
+}
+#home .container .home .col-md-6 p {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+#home .container .home .home-buttons .start {
+  background: #1fb6fc !important;
+  border: 1px solid #1fb6fc !important;
+  color: #fff !important;
+  margin-right: 10px;
+}
+#home .container .home .home-buttons .call {
+  background: #bc6ff1 !important;
+  border: 1px solid #bc6ff1 !important;
+  color: #fff !important;
+}
+#home .container .home .home-buttons .btn {
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 40px 40px 40px 0;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+#home .container .home .home-icons {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+}
+#home .container .home .home-icons li a i {
+  color: white;
+}
+
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-8 .service-left {
+  padding-right: 3rem !important;
+}
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-8 .service-left .our-services {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #1fb6fc;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-8 .service-left h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-8 .service-left a {
+  background: #bc6ff1 !important;
+  border: 1px solid #bc6ff1 !important;
+  color: #fff !important;
+}
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-8 .service-left .btn {
+  padding: 15 20px;
+  cursor: pointer;
+  border-radius: 40px 40px 40px 0;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=main.css.map */
