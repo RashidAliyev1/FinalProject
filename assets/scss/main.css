@@ -92,6 +92,9 @@ header .container .header nav ul li a::after {
   font-weight: 500;
   transition: all 0.3s ease;
 }
+#home .container .home .home-buttons .btn:hover {
+  border-radius: 0 40px 40px 40px;
+}
 #home .container .home .home-icons {
   margin: 0;
   padding: 0;
@@ -165,6 +168,9 @@ header .container .header nav ul li a::after {
   position: relative;
 }
 #services .container .services .g-0 .col-md-12 .g-3 .col-md-12 .col-md-4 .services-icon a i {
+  position: absolute;
+  top: 10px;
+  left: 9px;
   font-size: 40px;
   line-height: 1.2;
   color: #1fb6fc;
