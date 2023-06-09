@@ -1,6 +1,9 @@
 #services {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: whitesmoke;
   .container {
     .services {
+      padding: 100px 0;
       .g-0 {
         .col-md-12 {
           .g-3 {
@@ -19,6 +22,9 @@
                   font-weight: 400;
                   line-height: 1.4;
                 }
+                p{
+                  color: #88879e
+                }
                 a {
                   background: #bc6ff1 !important;
                   border: 1px solid #bc6ff1 !important;
@@ -34,9 +40,60 @@
                 }
               }
             }
+            .col-md-12{
+              .col-md-4{
+                background-color: white;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               margin: 7px;
+               height: 250px;
+               width: 250px;
+               &:hover{
+                background-color: #1fb6fc;
+               }
+               
+                .services-icon{
+                  width: 70px;
+                  height: 70px;
+                  margin: 0 auto;
+                  border-radius: 50%;
+                  background: #eff2ff;
+                  margin-bottom: 10px;
+                  position: relative;
+                  // left: 200px;
+                  a{
+                    i{
+                      font-size: 40px;
+                      line-height: 1.2;
+                      color: #1fb6fc;
+                    }
+                  }
+              }
+
+                }
+                .services-text{
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  flex-direction: column;
+                  h2{
+                    font-size: 17px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                  }
+                  p{
+                    // width: 220px;
+                    color: #88879e
+                  }
+
+                }
+              }
+            }
           }
         }
       }
     }
   }
-}
+
