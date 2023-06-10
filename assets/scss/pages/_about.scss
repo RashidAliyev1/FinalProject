@@ -1,0 +1,53 @@
+#about{
+    .about{
+        padding: 100px 0;
+        .col-md-6{
+            img{
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+            }
+        }
+        .py-5{
+            font-family: "Roboto", Arial, sans-serif;
+            .py-md-5{
+                span{
+                    font-size: 12px;
+                    display: block;
+                    margin-bottom: 5px;
+                    color: #1fb6fc;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                }
+                h2{
+                    font-size: 40px;
+                    font-weight: 400;
+                    line-height: 1.4;
+                }
+                a{
+                    background: #1fb6fc !important;
+                    border: 1px solid #1fb6fc !important;
+                    color: #fff !important;
+                   @extend %btn;
+                   padding: 10px 20px;
+                   
+                }
+
+            }
+
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: 50%;
+    }}

@@ -37,6 +37,9 @@
                     font-size: 14px;
                     font-weight: 500;
                     transition: all 0.3s ease;
+                    &:hover {
+                      border-radius: 0 40px 40px 40px;
+                    }
                 }
               }
             }
