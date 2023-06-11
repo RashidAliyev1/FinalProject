@@ -1,37 +1,77 @@
-#choose {
-  .overlay {
-  }
-  .choose {
-    padding: 100px 0;
-    .col-md-8 {
-      span {
-        @extend %span;
-        color: white;
-      }
-      h2 {
-        @extend %h2;
-      }
-    }
-    .col-md-6 {
-      .reason {
-        .reason-icon {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          background: #1fb6fc;
-          margin: 0 auto;
-          margin-bottom: 10px;
-        }
-        .reason-text{
-            h2{
-                font-size: 24px;
-                margin-bottom: 20px;
-            }
-            p{
-                @extend %p
-            }
-      }
+// #choose {
+//   // .overlay {
 
+//   // }
+//   .choose {
+//     padding: 100px 0;
+//     .col-md-8 {
+//       span {
+//         @extend %span;
+//         color: white;
+//       }
+//       h2 {
+//         @extend %h2;
+//       }
+//     }
+//     .card {
+//       .reason {
+//         .reason-icon {
+//           width: 80px;
+//           height: 80px;
+//           border-radius: 50%;
+//           background: #1fb6fc;
+//           margin: 0 auto;
+//           margin-bottom: 10px;
+//         }
+//         .reason-text {
+//           h3 {
+//             font-size: 24px;
+//             margin-bottom: 20px;
+//           }
+//           p {
+//             @extend %p;
+//             width: 100px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+#choose {
+  .container {
+    .choose {
+      padding: 100px 0;
+      .row {
+        .col {
+          .prod {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+            padding: 20px;
+            .prod-head {
+              padding: 20px;
+              .icon {
+                background-color: #1FB6FC;
+                padding: 30px;
+                border-radius: 50%;
+                .fa-solid{
+                  font-size: 30px;
+                  color: white;
+                }
+              }
+            }
+            .prod-body {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 0;
+            }
+          }
+        }
       }
     }
   }
