@@ -86,12 +86,13 @@ header {
               &:hover::after{
                 content: "";
                 display: block;
-                width: 100%;
-                // color: white;
+                width: 70%;
                 position: absolute;
+                left: 20px;
                 height: 2px;
-                border: 2px solid white;
+                border: 1px solid white;
                 margin-top: 5px;
+                transition: 1s;
               }
             }
           }
