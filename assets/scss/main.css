@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 #about .about .py-5 .py-md-5 a {
@@ -22,7 +22,7 @@
   border-radius: 0 40px 40px 40px;
 }
 
-#work .container .work .col-md-7 span, #choose .container .choose .row .col-md-8 span, #customers .container .customers .pb-5 .col-md-7 span, #team .container .team .pb-5 .col-md-7 span {
+#price .container .price .col-md-7 span, #work .container-fluid .work .col-md-7 span, #choose .container .choose .row .col-md-8 span, #customers .container .customers .pb-5 .col-md-7 span, #team .container .team .pb-5 .col-md-7 span {
   font-size: 12px;
   display: block;
   margin-bottom: 5px;
@@ -30,6 +30,16 @@
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 2px;
+}
+
+#price .container .price .col-md-7 h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+#price .container .price .col-md-7 p {
+  color: #88879e;
 }
 
 header {
@@ -170,13 +180,18 @@ header .container .header nav ul li a:hover::after {
 #services .container .services .g-0 .col-md-12 .g-3 .col-md-8 .service-left .btn:hover {
   border-radius: 0 40px 40px 40px;
 }
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-12 {
+  display: flex;
+  align-items: center;
+}
 #services .container .services .g-0 .col-md-12 .g-3 .col-md-12 .col-md-4 {
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 7px;
+  margin-right: 20px;
+  gap: 50px;
   height: 250px;
   width: 250px;
 }
@@ -251,6 +266,39 @@ header .container .header nav ul li a:hover::after {
   .col-md-6 {
     flex: 0 0 auto;
     width: 50%;
+  }
+}
+#counter .container .row .col .stastic {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#counter .container .row .col .stastic img {
+  height: 200px;
+  width: 300px;
+}
+#counter .container .row .col .stastic span {
+  font-size: 50px;
+  font-weight: 400;
+  color: #1fb6fc;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+#counter .container .row .col .stastic span .counter {
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 400;
+  color: #1fb6fc;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 991.98px) {
+  .counter img {
+    height: 400px;
+    display: block;
+    width: 100%;
+    background-position: top center;
   }
 }
 #team .container .team {
@@ -409,49 +457,72 @@ header .container .header nav ul li a:hover::after {
   padding: 0 20px;
 }
 
-#work .container .work {
+#work .container-fluid .work {
   padding: 100px 0;
 }
-#work .container .work .col-md-7 h2 {
+#work .container-fluid .work .col-md-7 h2 {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.4;
 }
-#work .container .work .workers-sec-cards .cardds {
-  padding-bottom: 35px;
-  width: 300px;
-  height: 400px;
+#work .container-fluid .work .comp .col-md-3 #comp:hover .text:hover {
+  background-color: rgb(202, 250, 250);
 }
-#work .container .work .workers-sec-cards .cardds .cardd {
-  position: relative;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
+#work .container-fluid .work .comp .col-md-3 #comp:hover .text:hover .span:hover {
+  color: blue;
 }
-#work .container .work .workers-sec-cards .cardds .cardd:hover {
-  background-color: aqua;
+#work .container-fluid .work .comp .col-md-3 #comp .work-wrap .img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-#work .container .work .workers-sec-cards .cardds .cardd:hover .card-content h3 {
-  color: red;
-  background-color: aquamarine;
-  display: inline-block;
-}
-#work .container .work .workers-sec-cards .cardds .cardd .work-img {
-  overflow: hidden;
-  display: block;
-}
-#work .container .work .workers-sec-cards .cardds .cardd .work-img img {
-  display: block;
+#work .container-fluid .work .comp .col-md-3 #comp .work-wrap .img img {
   width: 100%;
-  transition: transform 0.3s;
+  height: 400px;
+  border-radius: 4px;
+  display: block;
 }
-#work .container .work .workers-sec-cards .cardds .cardd .work-img:hover img {
-  transform: scale(1.25);
+#work .container-fluid .work .comp .col-md-3 #comp .work-wrap .text {
+  width: 100%;
+  padding: 20px;
 }
-#work .container .work .workers-sec-cards .cardds .cardd .card-content h3 {
-  font-size: 20px;
+#work .container-fluid .work .comp .col-md-3 #comp .work-wrap .text span {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  background: #f9faff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
-#work .container .work .workers-sec-cards .cardds .cardd .card-content h4 {
-  font-size: 16px;
+#work .container-fluid .work .comp .col-md-3 #comp .work-wrap .text h5 {
+  color: #2a3a60;
+}
+#work .container-fluid .work .view .col-md-12 p a {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  color: #1fb6fc;
+  letter-spacing: 1px;
+}
+
+#price {
+  background-color: aliceblue;
+}
+#price .container .price {
+  padding: 100px 0;
+}
+#price .container .price .lab .col-3 {
+  background-color: white;
+  text-align: center;
+  gap: 20px;
+}
+#price .container .price .lab .col-3 button {
+  margin: 30px 0;
 }/*# sourceMappingURL=main.css.map */

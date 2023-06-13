@@ -1,0 +1,41 @@
+#counter {
+  .container {
+    .row {
+      .col {
+        .stastic {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          img {
+            height: 200px;
+            width: 300px;
+          }
+          span {
+            font-size: 50px;
+            font-weight: 400;
+            color: #1fb6fc;
+            line-height: 1;
+            margin-bottom: 5px;
+            .counter {
+              display: inline-block;
+              font-size: 50px;
+              font-weight: 400;
+              color: #1fb6fc;
+              line-height: 1;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .counter img {
+    height: 400px;
+    display: block;
+    width: 100%;
+    background-position: top center;
+  }
+}

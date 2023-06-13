@@ -1,0 +1,31 @@
+#price{
+    background-color: aliceblue;
+    .container{
+        .price{
+            padding: 100px 0;
+            .col-md-7 {
+                span{
+                  @extend %span;
+                }
+                h2{
+                  @extend %h2;
+                }
+                p{
+                    @extend %p
+                }
+            }
+            .lab {
+                .col-3 {
+                    background-color: white;
+                    text-align: center;
+                    gap: 20px;
+                    button {
+                        margin: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
