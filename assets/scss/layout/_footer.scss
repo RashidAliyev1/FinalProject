@@ -1,0 +1,26 @@
+#footer{
+    padding: 5em 0 0 0;
+    background: #eaedff;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    .container{
+        .footer{
+            .col-md-6{
+                  flex: 1 0 0%;
+                .logo{
+                    color: #2a3a60;
+                    margin-bottom: 40px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: "Roboto", Arial, sans-serif;
+                    a{
+                        color: #1fb6fc;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+        }
+    }
+}

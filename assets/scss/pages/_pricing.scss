@@ -14,15 +14,64 @@
                     @extend %p
                 }
             }
-            .lab {
-                .col-3 {
-                    background-color: white;
-                    text-align: center;
-                    gap: 20px;
-                    button {
-                        margin: 30px 0;
+            .col-md-3{
+                
+                .content{
+                    position: relative;
+                    border-radius: 4px;
+                    margin-bottom: 30px;
+                    padding: 30px;
+                    background: #fff;
+                    .text-center{
+                        text-align: center !important;
+                        // height: 300px;
+                        // width: 100%;
+                        .price-head{
+                            sup{
+                                font-size: 24px;
+                                top: -0.8em;
+                                color: #aebbdb;
+                            }
+                            .number{
+                                font-size: 50px;
+                                font-weight: 400;
+                                color: #1fb6fc;
+                            }
+
+                        }
+                         p{
+                            margin-bottom: 20px;
+                            color: #2a3a60;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                         }
+                         ul{
+                            padding: 0;
+                            margin: 0;
+                            li{
+                                list-style: none;
+                                padding: 10px 0;
+                                i{
+                                    color: #1fb6fc
+                                }
+                            }
+                         }
+                         a{
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-style: 16px;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            width: 60%;
+                            margin: 0 auto;
+                          @extend %btn
+                         }
                     }
+
                 }
+
             }
         }
     }

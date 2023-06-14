@@ -10,7 +10,7 @@
   max-width: 1400px;
 }
 
-#about .about .py-5 .py-md-5 a {
+#price .container .price .col-md-3 .content .text-center a, #about .about .py-5 .py-md-5 a {
   padding: 0 20px;
   cursor: pointer;
   border-radius: 40px 40px 40px 0;
@@ -18,11 +18,11 @@
   font-weight: 500;
   transition: all 0.3s ease;
 }
-#about .about .py-5 .py-md-5 a:hover {
+#price .container .price .col-md-3 .content .text-center a:hover, #about .about .py-5 .py-md-5 a:hover {
   border-radius: 0 40px 40px 40px;
 }
 
-#price .container .price .col-md-7 span, #work .container-fluid .work .col-md-7 span, #choose .container .choose .row .col-md-8 span, #customers .container .customers .pb-5 .col-md-7 span, #team .container .team .pb-5 .col-md-7 span {
+#blog .container .blog .col-md-7 span, #price .container .price .col-md-7 span, #work .container-fluid .work .col-md-7 span, #choose .container .choose .row .col-md-8 span, #customers .container .customers .pb-5 .col-md-7 span, #team .container .team .pb-5 .col-md-7 span {
   font-size: 12px;
   display: block;
   margin-bottom: 5px;
@@ -32,22 +32,22 @@
   letter-spacing: 2px;
 }
 
-#price .container .price .col-md-7 h2 {
+#blog .container .blog .col-md-7 h2, #price .container .price .col-md-7 h2 {
   font-size: 40px;
   font-weight: 400;
   line-height: 1.4;
 }
 
-#price .container .price .col-md-7 p {
+#blog .container .blog .col-md-7 p, #price .container .price .col-md-7 p {
   color: #88879e;
 }
 
 header {
-  position: fixed;
   width: 100%;
+  left: 0;
   top: 0;
   padding: 15px 0;
-  z-index: 3;
+  background-color: #6610F2;
 }
 header .container .header .header-logo {
   font-size: 24px;
@@ -86,6 +86,28 @@ header .container .header nav ul li a:hover::after {
   border: 1px solid white;
   margin-top: 5px;
   transition: 1s;
+}
+
+#footer {
+  padding: 5em 0 0 0;
+  background: #eaedff;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+#footer .container .footer .col-md-6 {
+  flex: 1 0 0%;
+}
+#footer .container .footer .col-md-6 .logo {
+  color: #2a3a60;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", Arial, sans-serif;
+}
+#footer .container .footer .col-md-6 .logo a {
+  color: #1fb6fc;
+  font-size: 18px;
 }
 
 #home {
@@ -518,11 +540,141 @@ header .container .header nav ul li a:hover::after {
 #price .container .price {
   padding: 100px 0;
 }
-#price .container .price .lab .col-3 {
-  background-color: white;
-  text-align: center;
-  gap: 20px;
+#price .container .price .col-md-3 .content {
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #fff;
 }
-#price .container .price .lab .col-3 button {
-  margin: 30px 0;
+#price .container .price .col-md-3 .content .text-center {
+  text-align: center !important;
+}
+#price .container .price .col-md-3 .content .text-center .price-head sup {
+  font-size: 24px;
+  top: -0.8em;
+  color: #aebbdb;
+}
+#price .container .price .col-md-3 .content .text-center .price-head .number {
+  font-size: 50px;
+  font-weight: 400;
+  color: #1fb6fc;
+}
+#price .container .price .col-md-3 .content .text-center p {
+  margin-bottom: 20px;
+  color: #2a3a60;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+#price .container .price .col-md-3 .content .text-center ul {
+  padding: 0;
+  margin: 0;
+}
+#price .container .price .col-md-3 .content .text-center ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+#price .container .price .col-md-3 .content .text-center ul li i {
+  color: #1fb6fc;
+}
+#price .container .price .col-md-3 .content .text-center a {
+  color: #fff;
+  text-transform: uppercase;
+  font-style: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#blog {
+  background: #f9faff !important;
+}
+#blog .container .blog {
+  padding: 100px 0;
+}
+#blog .container .blog .col-lg-3 .blog-entry .blog-a img {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 270px;
+  z-index: -1;
+}
+#blog .container .blog .col-lg-3 .blog-entry .blog-text {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 0;
+  padding: 30px;
+}
+#blog .container .blog .col-lg-3 .blog-entry .blog-text h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #2a3a60;
+}
+#blog .container .blog .col-lg-3 .blog-entry .blog-text h3 a {
+  color: #000000;
+  text-decoration: none;
+}
+#blog .container .blog .col-lg-3 .blog-entry .blog-text p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+#blog .container .blog .col-lg-3 .blog-entry .blog-text p span {
+  margin-right: 10px;
+}
+#blog .container .blog .col-lg-3 .blog-entry .blog-text p a {
+  color: #1fb6fc;
+}
+
+#newsLetter {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0d6efd !important;
+}
+#newsLetter .container .newsLetter {
+  padding: 100px 0;
+}
+#newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-7 h2 {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 500;
+}
+#newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-7 p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+#newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-5 {
+  align-items: center !important;
+}
+#newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-5 form {
+  width: 100%;
+}
+#newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-5 form .form-group {
+  position: relative;
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+}
+#newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-5 form .form-group input {
+  background: transparent !important;
+  color: white !important;
+  font-size: 16px;
+  padding: 0;
+  border-radius: 5px 0px 0px 5px;
+  border: none !important;
+}
+#newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-5 form .form-group a i {
+  font-size: inherit;
 }/*# sourceMappingURL=main.css.map */
