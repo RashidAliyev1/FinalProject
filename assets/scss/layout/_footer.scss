@@ -6,7 +6,7 @@
     overflow: hidden;
     .container{
         .footer{
-            .col-md-6{
+            .col-lg{
                   flex: 1 0 0%;
                 .logo{
                     color: #2a3a60;
@@ -19,8 +19,111 @@
                         font-size: 18px;
                     }
                 }
+               .footer-icons{
+                padding-left: 0;
+                li{
+                    list-style: none;
+                    margin: 0 10px 0 0;
+                    display: inline-block;
+                    a{
+                        height: 40px;
+                        width: 40px;
+                        display: block;
+                        float: left;
+                        border-radius: 5px;
+                        position: relative;
+                        border: 1px solid #1fb6fc;
+                        i{
+                            font-size: 14px;
+                            position: absolute;
+                            top: 40%;
+                            left: 30%;
+                            color: #1fb6fc !important;
+                        }
+                    }
+                }
+               }
+
+            }
+            .col-md-6{
+                .explore{
+                    h2{
+                        color: #2a3a60;
+                        margin-bottom: 40px;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: "Roboto", Arial, sans-serif;
+
+                    }
+                    ul{
+                        padding-left: 0;
+
+                        li{
+                            margin-bottom: 10px;
+                            a{    color: #88879e;
+                                &:hover{
+                                    color: #1fb6fc;
+                                }
+                                i{
+                                    font-size: 14px;
+                                    
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rec{
+                .recent{
+                    h2{
+                        color: #2a3a60;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto", Arial, sans-serif; }
+                    .mb-4{
+                        a{
+                           
+                        }
+                            img{
+                                height: 60px;
+                                width: 60px;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+
+                            }
+                        }
+                        .text{
+                            padding-left: 20px;
+                            .meta{
+                                
+                                
+                                a{
+                                    color: #a4a3b5;
+                                    font-size: 13px;
+                                    i{
+                                        color: #1fb6fc;
+
+                                    }
+                                }
+                               
+
+                                }
+                                h6{
+                                    a{
+                                    color: #88879E;
+
+                                    &:hover{
+                                        color: #1fb6fc;
+                                    }
+                                    }
+                            }
+                        }
+                    }
+                }
             }
 
         }
     }
-}
