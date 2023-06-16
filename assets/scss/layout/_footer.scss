@@ -83,9 +83,6 @@
     font-weight: 500;
     font-family: "Roboto", Arial, sans-serif; }
                     .mb-4{
-                        a{
-                           
-                        }
                             img{
                                 height: 60px;
                                 width: 60px;
@@ -125,5 +122,22 @@
                 }
             }
 
+        }
+        .container-fluid{
+            background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+            .row{
+                .col-md-12 {
+                    text-align: center !important;
+
+                    p{
+                        color: rgba(255,255,255,.5);
+                        font-size: 13px;
+                        a{
+                            color: #1fb6fc;
+                        }
+                    }
+                }
+
+            }
         }
     }
