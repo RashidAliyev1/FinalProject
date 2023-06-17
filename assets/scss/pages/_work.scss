@@ -63,14 +63,12 @@
           #comp{
             &:hover{
               .text{
-                &:hover{
-                  background-color: rgb(202, 250, 250);
-                  .span{
-                    &:hover{
-                      color: blue;
-                    }
+               background-color: #E8F8FF;
+                  .category{
+                      background-color: #84D7FD;
+                      color: white;
                   }
-                }
+                
               }
             }
             .work-wrap{
