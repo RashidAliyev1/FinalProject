@@ -16,3 +16,13 @@ $(window).scroll(function() {
     a = 1;
   }
 });
+
+function nav(){
+  const burger = document.querySelector('.navbar-toggler');
+  const nav = document.querySelector('.navbar-collapse');
+  // const navButton = document.querySelector('.nav');
+  burger.addEventListener('click', ()=>{
+      nav.classList.toggle('show')
+      burger.remove.toggle("collapsed")
+  })
+}

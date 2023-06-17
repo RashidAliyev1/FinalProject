@@ -47,7 +47,7 @@ header {
   left: 0;
   top: 0;
   padding: 15px 0;
-  background-color: #6610F2;
+  background-color: #6610f2;
 }
 header .container .header .header-logo {
   font-size: 24px;
@@ -87,13 +87,34 @@ header .container .header nav ul li a:hover::after {
   margin-top: 5px;
   transition: 1s;
 }
-
+header .container .header nav .b {
+  display: none;
+}
+header .container .header nav .b .navbar-toggler {
+  border: none;
+  color: rgba(255, 255, 255, 0.9) !important;
+  cursor: pointer;
+  padding-right: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+header .container .header nav .b .navbar-toggler span {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+header .container .header nav .b .navbar-toggler .navbar-collapse {
+  display: none;
+  width: 100%;
+}
 @media only screen and (max-width: 992px) {
-  .menu {
-    display: block;
-  }
-  .menu .header-ul {
+  header .container .header nav ul {
     display: none;
+  }
+  header .container .header nav .b {
+    display: block;
   }
 }
 #footer {
@@ -333,6 +354,15 @@ header .container .header nav ul li a:hover::after {
   font-size: 40px;
   line-height: 1.2;
   color: #1fb6fc;
+}
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-12 .col-md-4 .services-icon a .position-icon {
+  position: absolute;
+  left: 20px;
+}
+#services .container .services .g-0 .col-md-12 .g-3 .col-md-12 .col-md-4 .services-icon a .position-img {
+  position: absolute;
+  left: 11px;
+  top: 10px;
 }
 #services .container .services .g-0 .col-md-12 .g-3 .col-md-12 .services-text {
   width: 100%;
@@ -786,4 +816,59 @@ header .container .header nav ul li a:hover::after {
 }
 #newsLetter .container .newsLetter .col-lg-10 .col-lg-5 .col-md-5 form .form-group a i {
   font-size: inherit;
+}
+
+#about-page {
+  background-color: #6610f2;
+}
+#about-page .container .about-page {
+  padding: 180px 0;
+}
+#about-page .container .about-page .row {
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+  position: relative;
+}
+#about-page .container .about-page .row .col-md-9 {
+  text-align: center !important;
+}
+#about-page .container .about-page .row .col-md-9 h1 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 60px;
+}
+#about-page .container .about-page .row .col-md-9 p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+#about-page .container .about-page .row .col-md-9 p .me-2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 0.5rem !important;
+}
+#about-page .container .about-page .row .col-md-9 p .me-2:hover a {
+  color: #1fb6fc;
+}
+#about-page .container .about-page .row .col-md-9 p .me-2:hover a i {
+  color: #1fb6fc;
+}
+#about-page .container .about-page .row .col-md-9 p .me-2 a {
+  color: rgba(255, 255, 255, 0.8);
+}
+#about-page .container .about-page .row .col-md-9 p .me-2 a i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+#about-page .container .about-page .row .col-md-9 p span {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 0.5rem !important;
+}
+#about-page .container .about-page .row .col-md-9 p span a {
+  color: rgba(255, 255, 255, 0.8);
+}
+#about-page .container .about-page .row .col-md-9 p span a i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
