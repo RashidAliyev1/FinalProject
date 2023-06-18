@@ -1058,4 +1058,59 @@ header .container .header nav .b .navbar-toggler .navbar-collapse {
 #work-page .container .work-page .row .col-md-9 p span a i {
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
+}
+
+#about-page {
+  background-color: #6610f2;
+}
+#about-page .container .about-page {
+  padding: 180px 0;
+}
+#about-page .container .about-page .row {
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+  position: relative;
+}
+#about-page .container .about-page .row .col-md-9 {
+  text-align: center !important;
+}
+#about-page .container .about-page .row .col-md-9 h1 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 60px;
+}
+#about-page .container .about-page .row .col-md-9 p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+#about-page .container .about-page .row .col-md-9 p .me-2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 0.5rem !important;
+}
+#about-page .container .about-page .row .col-md-9 p .me-2:hover a {
+  color: #1fb6fc;
+}
+#about-page .container .about-page .row .col-md-9 p .me-2:hover a i {
+  color: #1fb6fc;
+}
+#about-page .container .about-page .row .col-md-9 p .me-2 a {
+  color: rgba(255, 255, 255, 0.8);
+}
+#about-page .container .about-page .row .col-md-9 p .me-2 a i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+#about-page .container .about-page .row .col-md-9 p span {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 0.5rem !important;
+}
+#about-page .container .about-page .row .col-md-9 p span a {
+  color: rgba(255, 255, 255, 0.8);
+}
+#about-page .container .about-page .row .col-md-9 p span a i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
