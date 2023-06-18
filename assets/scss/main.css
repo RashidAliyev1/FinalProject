@@ -1113,4 +1113,59 @@ header .container .header nav .b .navbar-toggler .navbar-collapse {
 #about-page .container .about-page .row .col-md-9 p span a i {
   color: rgba(255, 255, 255, 0.8);
   font-size: 12px;
+}
+
+#contact-page {
+  background-color: #6610f2;
+}
+#contact-page .container .contact-page {
+  padding: 180px 0;
+}
+#contact-page .container .contact-page .row {
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+  position: relative;
+}
+#contact-page .container .contact-page .row .col-md-9 {
+  text-align: center !important;
+}
+#contact-page .container .contact-page .row .col-md-9 h1 {
+  font-weight: 300;
+  color: #fff;
+  font-size: 60px;
+}
+#contact-page .container .contact-page .row .col-md-9 p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+#contact-page .container .contact-page .row .col-md-9 p .me-2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 0.5rem !important;
+}
+#contact-page .container .contact-page .row .col-md-9 p .me-2:hover a {
+  color: #1fb6fc;
+}
+#contact-page .container .contact-page .row .col-md-9 p .me-2:hover a i {
+  color: #1fb6fc;
+}
+#contact-page .container .contact-page .row .col-md-9 p .me-2 a {
+  color: rgba(255, 255, 255, 0.8);
+}
+#contact-page .container .contact-page .row .col-md-9 p .me-2 a i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+#contact-page .container .contact-page .row .col-md-9 p span {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 0.5rem !important;
+}
+#contact-page .container .contact-page .row .col-md-9 p span a {
+  color: rgba(255, 255, 255, 0.8);
+}
+#contact-page .container .contact-page .row .col-md-9 p span a i {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
 }/*# sourceMappingURL=main.css.map */
