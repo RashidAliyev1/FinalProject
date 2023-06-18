@@ -1,0 +1,64 @@
+#work-page {
+    background-color: #6610f2;
+  .container {
+   .work-page{
+    padding: 180px 0;
+    .row {
+        color: rgba(255, 255, 255, 0.8);
+        z-index: 0;
+        position: relative;
+        .col-md-9 {
+            text-align: center !important;
+          h1 {
+            font-weight: 300;
+            color: #fff;
+            font-size: 60px;
+          }
+          p {
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8);
+            .me-2{
+                color: rgba(255, 255, 255, 0.8);
+                margin-right: 0.5rem !important;
+                &:hover{
+                    a{
+                        color: #1fb6fc;
+                        i{
+                            color: #1fb6fc;
+                        }
+                    }
+                }
+                
+                a{
+                    color: rgba(255, 255, 255, 0.8);
+                    
+                   
+                    i{
+                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 12px;
+                        
+
+                    }
+                }
+            }
+            span{
+                color: rgba(255, 255, 255, 0.8);
+                margin-right: 0.5rem !important;
+                a{
+                    color: rgba(255, 255, 255, 0.8);
+                    i{
+                        color: rgba(255, 255, 255, 0.8);
+                        font-size: 12px;
+
+                    }
+                }
+            }
+          }
+        }
+      }
+   }
+  }
+}
