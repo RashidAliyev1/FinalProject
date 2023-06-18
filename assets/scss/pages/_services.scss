@@ -6,7 +6,7 @@
       padding: 100px 0;
       .g-0 {
         .col-md-12 {
-          .g-3 {
+          .row {
             .col-md-8 {
               .service-left {
                 padding-right: 3rem !important;
@@ -52,7 +52,6 @@
                align-items: center;
                flex-direction: column;
                margin-right: 20px;
-              gap: 50px;
                height: 250px;
                width: 250px;
                &:hover{

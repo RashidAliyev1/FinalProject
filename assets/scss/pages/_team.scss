@@ -19,80 +19,51 @@
           &:hover {
             .card-body {
               background-color: #f9f1fe;
-              .team-icons {
-                li {
-                  a {
-                    display: inline-block;
-
-                    &:hover {
-                      font-size: 18px;
-                      font-weight: 700;
-                      text-decoration: none;
-                      background-color: #f2e3fc;
-                      color: #a641ec;
-                      border-radius: 50%;
-                  visibility: visible;
-
-                    }
-                  }
-                }
-              }
             }
-          }
-          .card {
-            position: relative;
-          }
 
-          .team-wrap {
-            position: absolute;
-            z-index: 1;
-            top: 120px;
-            left: -35px;
-            padding: 10px;
             .team-icons {
               li {
-                list-style: none;
-                margin: 22px;
                 a {
-                  display: none;
+                  display: block;
+
+                  font-size: 18px;
+                  font-weight: 700;
+                  text-decoration: none;
+                  background-color: #f2e3fc;
+                  color: #a641ec;
+                  border-radius: 50%;
+                  transition: 1.2s;
                 }
               }
             }
           }
 
-          // .img {
+          .team-icons {
+            li {
+              a {
+              }
+            }
+          }
+        }
+      }
+      .card {
+        position: relative;
+      }
 
-          //   img{
-
-          //     display: block;
-          //     background-position: top center !important;
-          //     position: relative;
-          //     background-size: cover;
-          //     background-repeat: no-repeat;
-          //   }
-          //   .team-icons {
-          //     position: absolute;
-          //     bottom: 20%;
-          //     bottom: 0px;
-          //     left: 15px;
-          //     padding: 0;
-          //     // opacity: 0;
-          //     li {
-          //       a {
-          //         height: 30px;
-          //         width: 30px;
-          //         // display: block;
-          //         float: left;
-          //         // color: #fff;
-          //         border-radius: 50%;
-          //         // position: relative;
-          //         background: #f2e3fc;
-          //         margin-bottom: 7px;
-
-          //       }
-          //     }
-          //   }
-          // }
+      .team-wrap {
+        position: absolute;
+        z-index: 1;
+        top: 115px;
+        left: -35px;
+        padding: 10px;
+        .team-icons {
+          li {
+            list-style: none;
+            margin: 15px;
+            a {
+              display: none;
+            }
+          }
         }
       }
     }
