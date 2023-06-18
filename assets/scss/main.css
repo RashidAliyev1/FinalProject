@@ -184,6 +184,21 @@ header .container .header nav .b .navbar-toggler .navbar-collapse {
 #footer .container .footer .col-md-6 .explore ul li a i {
   font-size: 14px;
 }
+#footer .container .footer .rec .recent .mb-3 ul li {
+  margin-top: 15px;
+}
+#footer .container .footer .rec .recent .mb-3 ul li i {
+  color: #1fb6fc;
+}
+#footer .container .footer .rec .recent .mb-3 ul li span {
+  color: #88879e;
+}
+#footer .container .footer .rec .recent .mb-3 ul li a i {
+  color: #1fb6fc;
+}
+#footer .container .footer .rec .recent .mb-3 ul li a span {
+  color: #88879e;
+}
 #footer .container .footer .rec .recent h2 {
   color: #2a3a60;
   margin-bottom: 40px;
@@ -209,7 +224,7 @@ header .container .header nav .b .navbar-toggler .navbar-collapse {
   color: #1fb6fc;
 }
 #footer .container .footer .rec .recent .text h6 a {
-  color: #88879E;
+  color: #88879e;
 }
 #footer .container .footer .rec .recent .text h6 a:hover {
   color: #1fb6fc;
@@ -274,6 +289,16 @@ header .container .header nav .b .navbar-toggler .navbar-collapse {
   align-items: center;
   gap: 20px;
   margin-top: 8px;
+}
+#home .container .home .home-icons li {
+  margin-top: 50px;
+  position: relative;
+}
+#home .container .home .home-icons li a:hover {
+  background-color: #1fb6fc;
+  border-radius: 50%;
+  padding: 3px;
+  font-weight: 700;
 }
 #home .container .home .home-icons li a i {
   color: white;
@@ -907,7 +932,7 @@ header .container .header nav .b .navbar-toggler .navbar-collapse {
   position: relative;
 }
 #services-page .container .services-page .row .col-md-9 {
-  text-align: center !important;
+  text-align: center;
 }
 #services-page .container .services-page .row .col-md-9 h1 {
   font-weight: 300;

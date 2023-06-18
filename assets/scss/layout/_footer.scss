@@ -1,143 +1,165 @@
-#footer{
-    padding: 5em 0 0 0;
-    background: #eaedff;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-    .container{
-        .footer{
-            .col-lg{
-                  flex: 1 0 0%;
-                .logo{
-                    color: #2a3a60;
-                    margin-bottom: 40px;
-                    font-size: 18px;
-                    font-weight: 500;
-                    font-family: "Roboto", Arial, sans-serif;
-                    a{
-                        color: #1fb6fc;
-                        font-size: 18px;
-                    }
-                }
-               .footer-icons{
-                padding-left: 0;
-                li{
-                    list-style: none;
-                    margin: 0 10px 0 0;
-                    display: inline-block;
-                    a{
-                        height: 40px;
-                        width: 40px;
-                        display: block;
-                        float: left;
-                        border-radius: 5px;
-                        position: relative;
-                        border: 1px solid #1fb6fc;
-                        i{
-                            font-size: 14px;
-                            position: absolute;
-                            top: 40%;
-                            left: 30%;
-                            color: #1fb6fc !important;
-                        }
-                    }
-                }
-               }
-
-            }
-            .col-md-6{
-                .explore{
-                    h2{
-                        color: #2a3a60;
-                        margin-bottom: 40px;
-                        font-size: 18px;
-                        font-weight: 500;
-                        font-family: "Roboto", Arial, sans-serif;
-
-                    }
-                    ul{
-                        padding-left: 0;
-
-                        li{
-                            margin-bottom: 10px;
-                            a{    color: #88879e;
-                                &:hover{
-                                    color: #1fb6fc;
-                                }
-                                i{
-                                    font-size: 14px;
-                                    
-
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .rec{
-                .recent{
-                    h2{
-                        color: #2a3a60;
-    margin-bottom: 40px;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Roboto", Arial, sans-serif; }
-                    .mb-4{
-                            img{
-                                height: 60px;
-                                width: 60px;
-                                background-size: cover;
-                                background-repeat: no-repeat;
-                                background-position: center center;
-
-                            }
-                        }
-                        .text{
-                            padding-left: 20px;
-                            .meta{
-                                
-                                
-                                a{
-                                    color: #a4a3b5;
-                                    font-size: 13px;
-                                    i{
-                                        color: #1fb6fc;
-
-                                    }
-                                }
-                               
-
-                                }
-                                h6{
-                                    a{
-                                    color: #88879E;
-
-                                    &:hover{
-                                        color: #1fb6fc;
-                                    }
-                                    }
-                            }
-                        }
-                    }
-                }
-            }
-
+#footer {
+  padding: 5em 0 0 0;
+  background: #eaedff;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  .container {
+    .footer {
+      .col-lg {
+        flex: 1 0 0%;
+        .logo {
+          color: #2a3a60;
+          margin-bottom: 40px;
+          font-size: 18px;
+          font-weight: 500;
+          font-family: "Roboto", Arial, sans-serif;
+          a {
+            color: #1fb6fc;
+            font-size: 18px;
+          }
         }
-        .container-fluid{
-            background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
-            .row{
-                .col-md-12 {
-                    text-align: center !important;
-
-                    p{
-                        color: rgba(255,255,255,.5);
-                        font-size: 13px;
-                        a{
-                            color: #1fb6fc;
-                        }
-                    }
-                }
-
+        .footer-icons {
+          padding-left: 0;
+          li {
+            list-style: none;
+            margin: 0 10px 0 0;
+            display: inline-block;
+            a {
+              height: 40px;
+              width: 40px;
+              display: block;
+              float: left;
+              border-radius: 5px;
+              position: relative;
+              border: 1px solid #1fb6fc;
+              i {
+                font-size: 14px;
+                position: absolute;
+                top: 40%;
+                left: 30%;
+                color: #1fb6fc !important;
+              }
             }
+          }
         }
+      }
+      .col-md-6 {
+        .explore {
+          h2 {
+            color: #2a3a60;
+            margin-bottom: 40px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Roboto", Arial, sans-serif;
+          }
+          ul {
+            padding-left: 0;
+
+            li {
+              margin-bottom: 10px;
+              a {
+                color: #88879e;
+                &:hover {
+                  color: #1fb6fc;
+                }
+                i {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .rec {
+        .recent {
+          .mb-3 {
+           
+            ul {
+               
+              li {
+                margin-top: 15px;
+
+                i {
+                  color: #1fb6fc;
+                }
+                span{
+                    color: #88879e;
+
+                  }
+
+                a {
+                  i {
+                    color: #1fb6fc;
+                  }
+                  span{
+                    color: #88879e;
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .rec {
+        .recent {
+          h2 {
+            color: #2a3a60;
+            margin-bottom: 40px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Roboto", Arial, sans-serif;
+          }
+          .mb-4 {
+            img {
+              height: 60px;
+              width: 60px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center center;
+            }
+          }
+          .text {
+            padding-left: 20px;
+            .meta {
+              a {
+                color: #a4a3b5;
+                font-size: 13px;
+                i {
+                  color: #1fb6fc;
+                }
+              }
+            }
+            h6 {
+              a {
+                color: #88879e;
+
+                &:hover {
+                  color: #1fb6fc;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
+  .container-fluid {
+    background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    .row {
+      .col-md-12 {
+        text-align: center !important;
+
+        p {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 13px;
+          a {
+            color: #1fb6fc;
+          }
+        }
+      }
+    }
+  }
+}
