@@ -79,7 +79,7 @@ btnLogin.addEventListener("click", async function () {
     let res = await axios.get(BASE_URL_USERS);
     let data = res.data;
     data.find((user) => {
-      if (user.isAdmin && emailLogin.value=="aliyevv@gmail.com" && passwordLogin.value==232323) {
+      if (user.isAdmin && emailLogin.value=="aliyev@gmail.com" && passwordLogin.value==12345) {
         window.location = `/admin-panel/admin.html`;
       } else if(data.filter((user)=>user.email==emailLogin.value && user.password==passwordLogin.value)){
         window.location = `index.html`;
