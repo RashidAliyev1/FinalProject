@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -32,63 +32,115 @@
       referrerpolicy="no-referrer"
     />
     <title>Admin</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="admin-panel">
-        <div class="">
-            <div class="admin-panel">
-                <div class="row m-0">
-                    <h1 class="text-center p-5 bg-info">Dashboad</h1>
-                    <div class="col col-3 bg-secondary vh-100">
-                        <div class="img">
-                            <img src="" alt="..">
-                        </div>
-                        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
-                        <p>Rashid Aliyev</p>
-                        <div class="menu">
-                            <p>Admin Menu</p>
-                            <nav>
-                                <ul>
-                                    <li><a href="">Worker</a></li>
-                                    <li><a href="">Profil</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="col col-9 bg-warning">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                </div>
+      <div class="">
+        <div class="admin-panel">
+          <div class="row m-0">
+            <h1 class="text-center p-5 bg-info">Dashboad</h1>
+            <div class="col col-3 bg-secondary vh-100">
+              <div class="img">
+                <img src="" alt=".." />
+              </div>
+              <a href="../index.html"
+                ><i class="fa-solid fa-right-from-bracket"></i>Logout</a
+              >
+              <p>Rashid Aliyev</p>
+              <div class="menu">
+                <p>Admin Menu</p>
+                <nav>
+                  <ul>
+                    <li><a href="">Worker</a></li>
+                    <li><a href="">Profil</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
+            <div class="col col-9 bg-warning">
+              <div class="form">
+                <form action="">
+                  <h2 class="title">Add Worker</h2>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Fullname:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="add a  fullname.."
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="job" class="form-label">Job:</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="job"
+                      placeholder="add a job"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="photo" class="form-label">Photo:</label>
+                    <input
+                      type="file"
+                      class="form-control"
+                      id="photo"
+                      placeholder="add a photo.."
+                    />
+                  </div>
+                  <div class="m-3 d-flex justify-content-center">
+                    <button type="submit" class="submit">Add</button>
+                  </div>
+                </form>
+              </div>
+              <div class="table">
+                <h3>Workers</h3>
+                <input type="search" placeholder="Search..." id="search" />
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Photo</th>
+                      <th scope="col">Fullname</th>
+                      <th scope="col">Job</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td colspan="2">Larry the Bird</td>
+                              <td>@twitter</td>
+                            </tr> -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-</body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/worker.js"></script>
+  </body>
 </html>
+
+<td>
+  <img src="" width="100%" alt="">
+</td>
