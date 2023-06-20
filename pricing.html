@@ -51,51 +51,56 @@
               <li><a href="./work.html">WORK</a></li>
               <li><a href="./blog.html">BLOG</a></li>
               <li><a href="./contact.html">CONTACT US</a></li>
+              <li><a href="./admin-panel/admin.html">Admin</a></li>
+              <li>
+                <a href="login.html"
+                  ><i class="fa-solid fa-user-plus" style="color: #ffffff"></i
+                ></a>
+              </li>
             </ul>
-
-            <div class="b">
-              <button
-                class="navbar-toggler collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="fa fa-bars"></span> Menu
-              </button>
-              <div
-                class="navbar-collapse collapse"
-                id="navbarSupportedContent"
-                style
-              >
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./about.html">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./services.html">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pricing.html">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./work.html">Work</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </nav>
+
+          <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars fa-bounce"></i>
+            Menu
+          </a> -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="fa-solid fa-bars fa-bounce"></i>
+            Menu
+          </button>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Burger Menu</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="header-ul">
+                <li><a class="text-dark" href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="./services.html">SERVICES</a></li>
+                <li><a href="./pricing.html">PRICING</a></li>
+                <li><a href="./work.html">WORK</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT US</a></li>
+                <li><a href="./admin-panel/admin.html">Admin</a></li>
+                <li>
+                  <a href="login.html"
+                    ><i
+                      class="fa-solid fa-user-plus"
+                      style="color: #ffffff"
+                    ></i
+                  ></a>
+                </li>
+              </ul> 
+
+            </div>
+          </div>
+
+
+
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -117,6 +122,130 @@
                     >Pricing<i class="fa-solid fa-arrow-right-long"></i>
                   </span>
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="price">
+        <div class="container">
+          <div class="price">
+            <div class="row justify-content-center pb-5">
+              <div
+                class="col-md-7 text-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <span>PRICING</span>
+                <h2 class="mb-3">Choose Your Pricing Plan</h2>
+                <p>
+                  Far far away, behind the word mountains, far from the countries
+                  Vokalia and Consonantia, there live the blind texts. Separated
+                  they live in Bookmarksgrove.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-md-3 col-lg-3 aos-init aos-animate"
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <div class="content">
+                  <div class="text-center">
+                    <span class="price-head"
+                      ><sup>$</sup> <span class="number">49</span></span
+                    >
+                    <p class="personal d-block">Personal</p>
+                    <ul class="pricing-text mb-5">
+                      <li><i class="fa fa-check me-2"></i>Strategic Alliance</li>
+                      <li><i class="fa fa-check me-2"></i>Growth Expansion</li>
+                      <li><i class="fa fa-check me-2"></i>Business Planning</li>
+                      <li><i class="fa fa-check me-2"></i>Contact Negotiation</li>
+                      <li><i class="fa fa-check me-2"></i>Market Positioning</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary d-block px-2 py-3"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-3 col-lg-3 aos-init aos-animate"
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <div class="content">
+                  <div class="text-center">
+                    <span class="price-head"
+                      ><sup>$</sup> <span class="number">79</span></span
+                    >
+                    <p class="personal d-block">PROFESSIONAL</p>
+                    <ul class="pricing-text mb-5">
+                      <li><i class="fa fa-check me-2"></i>Strategic Alliance</li>
+                      <li><i class="fa fa-check me-2"></i>Growth Expansion</li>
+                      <li><i class="fa fa-check me-2"></i>Business Planning</li>
+                      <li><i class="fa fa-check me-2"></i>Contact Negotiation</li>
+                      <li><i class="fa fa-check me-2"></i>Market Positioning</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary d-block px-2 py-3"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-3 col-lg-3 aos-init aos-animate"
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <div class="content">
+                  <div class="text-center">
+                    <span class="price-head"
+                      ><sup>$</sup> <span class="number">109</span></span
+                    >
+                    <p class="personal d-block">MEDIUM BUSINESS</p>
+                    <ul class="pricing-text mb-5">
+                      <li><i class="fa fa-check me-2"></i>Strategic Alliance</li>
+                      <li><i class="fa fa-check me-2"></i>Growth Expansion</li>
+                      <li><i class="fa fa-check me-2"></i>Business Planning</li>
+                      <li><i class="fa fa-check me-2"></i>Contact Negotiation</li>
+                      <li><i class="fa fa-check me-2"></i>Market Positioning</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary d-block px-2 py-3"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-3 col-lg-3 aos-init aos-animate"
+                data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <div class="content">
+                  <div class="text-center">
+                    <span class="price-head"
+                      ><sup>$</sup> <span class="number">149</span></span
+                    >
+                    <p class="personal d-block">GIGANTIC BUSINESS</p>
+                    <ul class="pricing-text mb-5">
+                      <li><i class="fa fa-check me-2"></i>Strategic Alliance</li>
+                      <li><i class="fa fa-check me-2"></i>Growth Expansion</li>
+                      <li><i class="fa fa-check me-2"></i>Business Planning</li>
+                      <li><i class="fa fa-check me-2"></i>Contact Negotiation</li>
+                      <li><i class="fa fa-check me-2"></i>Market Positioning</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary d-block px-2 py-3"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>

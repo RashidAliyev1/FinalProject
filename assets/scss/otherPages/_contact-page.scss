@@ -67,7 +67,7 @@
     padding: 6em 0;
     position: relative;
     width: 100%;
-    .container{
+    .container-xl{
         .row{
             .col-md-12{
                 h2{
@@ -95,7 +95,7 @@
         }
         .message{
             flex-wrap: wrap;
-            .col-md-6{
+            .order-md-last{
                 width: 100%;
                 form{
                     width: 100%;

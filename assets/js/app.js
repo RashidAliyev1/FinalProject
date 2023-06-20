@@ -23,12 +23,12 @@ function validateInput(){
 
     //password
     if(pwd.value.trim()===""){
-        onError(pwd,"User Name cannot be empty");
+        onError(pwd,"Password cannot be empty");
      }else{
          onSuccess(pwd);
      }
      if(conPwd.value.trim()===""){
-        onError(conPwd,"User Name cannot be empty");
+        onError(conPwd,"Confirm Password cannot be empty");
      }else{
          if(pwd.value.trim()!==conPwd.value.trim()){
             onError(conPwd,"Password & Confirm password not matching");
@@ -64,5 +64,24 @@ function onError(input,message){
 function isValidEmail(email){
    return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+
+let BASE_URL="http://localhost:8080/workers"
+
+function addWorkers(){
+    form.addEventListener("submit",async function(e){
+        e.preventDefault()
+        let worker={
+            fullName:userName.value,
+            email:email.value,
+            password:pwd.value,
+        }
+        await axios.post(BASE_URL,worker);
+        window.location.href="./accUser.html"
+    } )
+}
+addWorkers()
+
+
 
 

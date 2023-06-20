@@ -1,0 +1,65 @@
+{
+    "teams": [
+        {
+          "image": "./assets/images/work-1.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 100
+        },
+        {
+          "image": "./assets/images/work-1.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 101
+        },
+        {
+          "image": "./assets/images/work-1.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 102
+        },
+        {
+          "image": "./assets/images/work-1.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 105
+        },
+        {
+          "image": "./assets/images/work-1.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 109
+        },
+        {
+          "image": "./assets/images/work-1.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 11
+        },
+        {
+          "image": "./assets/images/work-1.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 14
+        },
+        {
+          "image": "./assets/images/work-10.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 21
+        },
+        {
+          "image": "./assets/images/work-11.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 15
+        },
+        {
+          "image": "./assets/images/work-12.jpg",
+          "jobs": "BRANDING, PRINTING",
+          "description":"High Quality Design Concept",
+          "id": 19
+        }
+        
+      ]
+}

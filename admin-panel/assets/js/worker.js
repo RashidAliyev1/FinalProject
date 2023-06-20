@@ -19,7 +19,7 @@ function drawTable(arr) {
   arr.forEach((element) => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
-        <td><img src="${element.photo} " width="100%"  alt="" /></td>
+        <td><img src="${element.photo} " width="100px"  alt="" /></td>
         <td style="text-transform:uppercase">${element.fullname}</td>
         <td>${element.job}</td>
         <td>

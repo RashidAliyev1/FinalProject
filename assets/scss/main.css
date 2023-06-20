@@ -10,7 +10,7 @@
   max-width: 1400px;
 }
 
-#contact-info .container .message .col-md-6 form .form-group .btn, #price .container .price .col-md-3 .content .text-center a, #about .about .py-5 .py-md-5 a {
+#contact-info .container-xl .message .order-md-last form .form-group .btn, #price .container .price .col-md-3 .content .text-center a, #about .about .py-5 .py-md-5 a {
   padding: 0 20px;
   cursor: pointer;
   border-radius: 40px 40px 40px 0;
@@ -18,7 +18,7 @@
   font-weight: 500;
   transition: all 0.3s ease;
 }
-#contact-info .container .message .col-md-6 form .form-group .btn:hover, #price .container .price .col-md-3 .content .text-center a:hover, #about .about .py-5 .py-md-5 a:hover {
+#contact-info .container-xl .message .order-md-last form .form-group .btn:hover, #price .container .price .col-md-3 .content .text-center a:hover, #about .about .py-5 .py-md-5 a:hover {
   border-radius: 0 40px 40px 40px;
 }
 
@@ -995,6 +995,45 @@ header .container .header button {
   font-size: 12px;
 }
 
+#team .container .team {
+  padding: 100px 0;
+}
+#team .container .team .pb-5 .col-md-7 h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+#team .container .team .row .col-md-3:hover .card-body {
+  background-color: #f9f1fe;
+}
+#team .container .team .row .col-md-3:hover .team-icons li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #f2e3fc;
+  color: #a641ec;
+  border-radius: 50%;
+  transition: 1.2s;
+}
+#team .container .team .card {
+  position: relative;
+}
+#team .container .team .team-wrap {
+  position: absolute;
+  z-index: 1;
+  top: 115px;
+  left: -35px;
+  padding: 10px;
+}
+#team .container .team .team-wrap .team-icons li {
+  list-style: none;
+  margin: 15px;
+}
+#team .container .team .team-wrap .team-icons li a {
+  display: none;
+}
+
 #services-page {
   background-color: #6610f2;
 }
@@ -1275,32 +1314,32 @@ header .container .header button {
   position: relative;
   width: 100%;
 }
-#contact-info .container .row .col-md-12 h2 {
+#contact-info .container-xl .row .col-md-12 h2 {
   font-weight: 500;
 }
-#contact-info .container .row .col-md-3 {
+#contact-info .container-xl .row .col-md-3 {
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) / 2);
   padding-left: calc(var(--bs-gutter-x) / 2);
   margin-top: var(--bs-gutter-y);
 }
-#contact-info .container .row .col-md-3 p {
+#contact-info .container-xl .row .col-md-3 p {
   margin-top: 0;
 }
-#contact-info .container .row .col-md-3 p a {
+#contact-info .container-xl .row .col-md-3 p a {
   color: #1fb6fc;
 }
-#contact-info .container .message {
+#contact-info .container-xl .message {
   flex-wrap: wrap;
 }
-#contact-info .container .message .col-md-6 {
+#contact-info .container-xl .message .order-md-last {
   width: 100%;
 }
-#contact-info .container .message .col-md-6 form {
+#contact-info .container-xl .message .order-md-last form {
   width: 100%;
 }
-#contact-info .container .message .col-md-6 form .form-group input {
+#contact-info .container-xl .message .order-md-last form .form-group input {
   height: 50px;
   background: white;
   color: rgba(0, 0, 0, 0.8);
@@ -1309,7 +1348,7 @@ header .container .header button {
   box-shadow: none !important;
   margin-bottom: 10px;
 }
-#contact-info .container .message .col-md-6 form .form-group textarea {
+#contact-info .container-xl .message .order-md-last form .form-group textarea {
   background: white;
   color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
@@ -1317,15 +1356,15 @@ header .container .header button {
   box-shadow: none !important;
   margin-bottom: 10px;
 }
-#contact-info .container .message .col-md-6 form .form-group .btn {
+#contact-info .container-xl .message .order-md-last form .form-group .btn {
   background-color: #1fb6fc !important;
   border: 1px solid #1fb6fc !important;
   color: #fff !important;
 }
-#contact-info .container .message .col-md-6 .col-md-6 #map {
+#contact-info .container-xl .message .order-md-last .col-md-6 #map {
   position: relative;
 }
-#contact-info .container .message .col-md-6 .col-md-6 .gm-err-container .gm-err-content {
+#contact-info .container-xl .message .order-md-last .col-md-6 .gm-err-container .gm-err-content {
   border-radius: 1px;
   padding-top: 0;
   padding-left: 10%;
@@ -1334,6 +1373,6 @@ header .container .header button {
   vertical-align: middle;
   display: table-cell;
 }
-#contact-info .container .message .col-md-6 .col-md-6 .gm-err-container .gm-err-content .gm-err-icon {
+#contact-info .container-xl .message .order-md-last .col-md-6 .gm-err-container .gm-err-content .gm-err-icon {
   text-align: center;
 }/*# sourceMappingURL=main.css.map */
