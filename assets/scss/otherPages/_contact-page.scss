@@ -62,3 +62,100 @@
    }
   }
 }
+
+#contact-info{
+    padding: 6em 0;
+    position: relative;
+    width: 100%;
+    .container{
+        .row{
+            .col-md-12{
+                h2{
+                    font-weight: 500;
+
+                }
+            }
+            .col-md-3{
+                width: 100%;
+                max-width: 100%;
+                padding-right: calc(var(--bs-gutter-x) / 2);
+                padding-left: calc(var(--bs-gutter-x) / 2);
+                margin-top: var(--bs-gutter-y);
+                p{
+                    margin-top: 0;
+                    span{
+
+                    }
+                    a{
+                        color: #1fb6fc;
+
+                    }
+                }
+            }
+        }
+        .message{
+            flex-wrap: wrap;
+            .col-md-6{
+                width: 100%;
+                form{
+                    width: 100%;
+                    .form-group{
+                        input{
+                            height: 50px;
+                            background: white;
+                            color: rgba(0, 0, 0, 0.8);
+                            font-size: 14px;
+                            border-radius: 2px;
+                            box-shadow: none !important;
+                            margin-bottom: 10px;
+
+                        }
+                        textarea{
+                            background: white;
+                            color: rgba(0, 0, 0, 0.8);
+                            font-size: 14px;
+                            border-radius: 2px;
+                            box-shadow: none !important;
+                            margin-bottom: 10px;
+
+                        }
+                        .btn{
+                            @extend %btn;
+                            background-color: #1fb6fc !important;
+                            border: 1px solid #1fb6fc !important;
+                            color: #fff !important;
+                        }
+                    }
+                }
+                .col-md-6{
+                    #map{
+                        position: relative;
+                        // overflow: hidden;
+                    }
+                    .gm-err-container{
+                        .gm-err-content{
+                            border-radius: 1px;
+                            padding-top: 0;
+                            padding-left: 10%;
+                            padding-right: 10%;
+                            position: static;
+                            vertical-align: middle;
+                            display: table-cell;
+                        
+                            .gm-err-icon{
+                                text-align: center;
+                                img{
+
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+}

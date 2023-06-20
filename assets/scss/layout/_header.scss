@@ -61,6 +61,7 @@ header {
   // background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
   .container {
     .header {
+    
       .header-logo {
         font-size: 24px;
         font-weight: 900;
@@ -132,6 +133,15 @@ header {
           }
         }
       }
+      button{
+        display: none;
+        border: 1px solid white;
+        color: white;
+        background-color: #6610f2;
+      }
+      // a{
+      //   display: none;
+      // }
 
     
     }
@@ -142,6 +152,8 @@ header {
  header{
   .container{
     .header{
+      display: flex;
+      justify-content: space-between;
       nav{
         ul{
           display: none;
@@ -152,6 +164,12 @@ header {
           
         }
       }
+      button{
+        display: block;
+      }
+      // a{
+      //   display: block;
+      // }
     }
   }
  }
