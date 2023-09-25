@@ -2,7 +2,8 @@ let userName=document.getElementById("txtUserName");
 let email=document.getElementById("txtEmail");
 let pwd=document.getElementById("txtPwd");
 let conPwd=document.getElementById("txtConPwd");
-let form=document.querySelector("form");
+let form=document.querySelector(".form");
+let formBtn=document.querySelector(".button");
 
 function validateInput(){
     //check username is empty 
@@ -66,21 +67,26 @@ function isValidEmail(email){
 }
 
 
-let BASE_URL="http://localhost:8080/workers"
+let BASE_URL="http://localhost:8080/users"
 
-function addWorkers(){
-    form.addEventListener("submit",async function(e){
+
+    formBtn.addEventListener("click",async function(e){
         e.preventDefault()
-        let worker={
-            fullName:userName.value,
-            email:email.value,
-            password:pwd.value,
+        console.log("asdfasf")
+        if(userName.value && email.value && pwd.value){
+
+            let users={
+                name:userName.value,
+                email:email.value,
+                password:pwd.value,
+                isAdmin:false
+            }
+            await axios.post(BASE_URL,users);
+            window.location.href="./accUser.html"
         }
-        await axios.post(BASE_URL,worker);
-        window.location.href="./accUser.html"
+       
     } )
-}
-addWorkers()
+
 
 
 

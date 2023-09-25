@@ -30,13 +30,14 @@ function nav(){
 const comp=document.querySelector('.team-dinamik')
 const compWork=document.querySelector('.comp')
 const load=document.querySelector(".load")
+const loadWork=document.querySelector(".loadWork")
 let filtered=[]
 let copyData=[]
 let defaultArr=[]
 let num=4
 let favData
 let BASE_URL="http://localhost:8080/workers"
-let BASE_URL_teams="http://localhost:8081/teams"
+let TEAMS="http://localhost:8081/teams"
 
 async function getDataUsers() {
   let res = await axios.get(BASE_URL);
@@ -97,58 +98,65 @@ function getCardWorker(arr){
 
 
 
-// async function getDataTeams() {
-//   let res2 = await axios.get(BASE_URL_teams);
-//   let data2 = res2.data;
-//   // console.log(data);
-//   getCardWorker(data2)
-// }
+async function getDataTeams() {
+  let res2 = await axios.get(TEAMS);
+  let data2 = res2.data;
+  // console.log(data);
+  getCardWorker2(data2)
+}
 
-// getDataTeams()
+getDataTeams()
 
-// function getCardWorker(team){
-//   compWork.innerHTML=""
-//   team.forEach(work => {
-//     compWork.innerHTML+=`
-//     <div class="col-12 col-md-3 col-lg-3 d-flex align-items-center">
-//               <div id="comp">
-//                 <div
-//                   class="work-wrap aos-init aos-animate"
-//                   data-aos="flip-left"
-//                   data-aos-duration="1000"
-//                   data-aos-delay="100"
-//                 >
-//                   <div class="img">
-//                     <img src="${work.image}" class="" alt="" />
-//                   </div>
-//                   <div class="text">
-//                     <span class="category">${work.jobs}</span>
-//                     <h5><a href="#">${work.description}</a></h5>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
+function getCardWorker2(x){
+  compWork.innerHTML=""
+  console.log(x)
+  x.slice(0,num).forEach(work => {
+    compWork.innerHTML+=`
+    <div class="col-12 col-md-3 col-lg-3 d-flex align-items-center">
+              <div id="comp">
+                <div
+                  class="work-wrap aos-init aos-animate"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <div class="img">
+                    <img src=${work.image} class="" alt="" />
+                  </div>
+                  <div class="text">
+                    <span class="category">${work.jobs}</span>
+                    <h5><a href="#">${work.description}</a></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
    
-//     `
-//   });
-// }
+    `
+  });
+}
 
 
-// load.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   num = num + 4;
-//   filtered = copyData.slice(0, num).filter((item) => {
-//     return item.title
-//       .toLocaleLowerCase()
-//       .includes(search.value.toLocaleLowerCase());
-//   });
-//   console.log(defaultArr);
-//   defaultArr = filtered;
-//   getAllData();
-// });
+load.addEventListener("click", (e) => {
+  e.preventDefault();
+  num = num + 4;
+  filtered = copyData.slice(0, num).filter((item) => {
+    return item.title
+      .toLocaleLowerCase()
+      .includes(search.value.toLocaleLowerCase());
+  });
+  console.log(defaultArr);
+  defaultArr = filtered;
+  getAllData();
+});
 
 load.addEventListener("click", async function (e) {
   e.preventDefault();
   num = num + 4;
   getDataUsers();
+});
+
+loadWork.addEventListener("click", async function (e) {
+  e.preventDefault();
+  num = num + 4;
+  getDataTeams();
 });

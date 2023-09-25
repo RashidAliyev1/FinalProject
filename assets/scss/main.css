@@ -888,6 +888,8 @@ header .container .header button {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #6610f2;
+  height: 100vh;
   margin-top: 180px;
 }
 #sign-up .container {
@@ -940,6 +942,10 @@ header .container .header button {
   cursor: pointer;
 }
 
+#login {
+  background-color: #6610f2;
+  height: 100vh;
+}
 #about-page {
   background-color: #6610f2;
 }
